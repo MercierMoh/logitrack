@@ -1,0 +1,19 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ],
+  "env": {
+    "REACT_APP_SUPABASE_URL": "https://tpzwgqigatnycvuehbgi.supabase.co",
+    "REACT_APP_SUPABASE_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRwendncWlnYXRueWN2dWVoYmdpIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYzMDk2NTAsImV4cCI6MjA2MTg4NTY1MH0.fIVtEr1wyUT3WG2_sLrTitJ9L_700HvnrziC9_VD77w"
+  }
+}
